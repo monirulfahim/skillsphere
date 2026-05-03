@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Web Development Bootcamp",
+    "instructor": "John Doe",
+    "duration": "20 hours",
+    "rating": 4.8,
+    "level": "Beginner",
+    "description": "Learn full stack development",
+    "image": ""
+  },
+  {
+    "id": 2,
+    "title": "UI UX Design",
+    "instructor": "Jane Smith",
+    "duration": "15 hours",
+    "rating": 4.7,
+    "level": "Beginner",
+    "description": "Learn UI UX",
+    "image": ""
+  },
+  {
+    "id": 3,
+    "title": "Digital Marketing",
+    "instructor": "Alex",
+    "duration": "10 hours",
+    "rating": 4.6,
+    "level": "Intermediate",
+    "description": "Marketing skills",
+    "image": ""
+  },
+  {
+    "id": 4,
+    "title": "React Mastery",
+    "instructor": "David",
+    "duration": "18 hours",
+    "rating": 4.9,
+    "level": "Advanced",
+    "description": "Deep React",
+    "image": ""
+  },
+  {
+    "id": 5,
+    "title": "Node JS",
+    "instructor": "Mike",
+    "duration": "12 hours",
+    "rating": 4.5,
+    "level": "Intermediate",
+    "description": "Backend dev",
+    "image": ""
+  },
+  {
+    "id": 6,
+    "title": "Python Basics",
+    "instructor": "Sara",
+    "duration": "8 hours",
+    "rating": 4.4,
+    "level": "Beginner",
+    "description": "Learn Python",
+    "image": ""
+  }
+]
