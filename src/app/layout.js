@@ -75,7 +75,44 @@ export default function RootLayout({ children }) {
           )}
         </nav>
 
-</body>
+        {/* --- Main Content --- */}
+        <main className="flex-grow">{children}</main>
+
+        {/* --- Footer --- */}
+        <footer className="bg-gray-800 text-white p-8 mt-10 max-[576px]:p-5">
+          <div className='flex flex-col justify-center items-center gap-4 text-center'>
+            <div className="text-6xl font-semibold text-emerald-600 max-[576px]:text-5xl">
+              SkillSphere
+            </div>
+            <div className='text-[#FFFFFF]'>
+              <p className='mb-6 text-gray-300'>A curated space for learning and growth. Explore new skills, build knowledge step by step, and shape your future with confidence through meaningful courses.</p>
+              <p className='text-xl'>Social Links</p>
+            </div>
+            <div className='flex gap-4'>
+              <div>
+                <img src="/images/instagram.png" alt="" />
+              </div>
+              <div>
+                <img src="/images/facebook.png" alt="" />
+              </div>
+              <div>
+                <img src="/images/twitter.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <br />
+          <hr className='pt-2 opacity-30 text-[#1A8862]' />
+          <div className='flex justify-between items-center mt-3 text-[#FAFAFA] max-[576px]:flex-col max-[576px]:gap-10 max-[768px]:flex-col max-[768px]:gap-11'>
+            <div>© 2026 SkillSphere. All rights reserved.</div>
+            <div className='flex gap-7 max-[576px]:gap-5 max-[768px]:gap-10'>
+              <div>Privacy Policy</div>
+              <div>Terms of Service</div>
+              <div>Cookies</div>
+            </div>
+          </div>
+        </footer>
+
+      </body>
     </html>
   );
 }
