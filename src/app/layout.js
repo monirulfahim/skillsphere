@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}>
 
         {/* --- Responsive Navbar --- */}
-        <nav className="bg-white shadow-md sticky top-0 z-50 p-4">
+        <nav className="bg-white shadow-md sticky top-0 z-50 p-7">
           <div className="max-w-7xl mx-auto flex items-center justify-between">
 
             {/* Logo */}

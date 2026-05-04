@@ -1,13 +1,13 @@
 [
   {
     "id": 1,
-    "title": "Web Development Bootcamp",
+    "title": "Web Development",
     "instructor": "John Doe",
     "duration": "20 hours",
     "rating": 4.8,
     "level": "Beginner",
     "description": "Learn full stack development",
-    "image": ""
+    "image": "/images/web-dev.jpg"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "rating": 4.7,
     "level": "Beginner",
     "description": "Learn UI UX",
-    "image": ""
+    "image": "/images/ui-ux.png"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "rating": 4.6,
     "level": "Intermediate",
     "description": "Marketing skills",
-    "image": ""
+    "image": "/images/digital-marketing.jpg"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "rating": 4.9,
     "level": "Advanced",
     "description": "Deep React",
-    "image": ""
+    "image": "/images/react-mastery.jpeg"
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "rating": 4.5,
     "level": "Intermediate",
     "description": "Backend dev",
-    "image": ""
+    "image": "/images/node-js.jpg"
   },
   {
     "id": 6,
@@ -57,6 +57,6 @@
     "rating": 4.4,
     "level": "Beginner",
     "description": "Learn Python",
-    "image": ""
+    "image": "/images/python.png"
   }
 ]
