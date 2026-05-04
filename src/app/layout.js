@@ -81,11 +81,11 @@ export default function RootLayout({ children }) {
         {/* --- Footer --- */}
         <footer className="bg-gray-800 text-white p-8 mt-10 max-[576px]:p-5">
           <div className='flex flex-col justify-center items-center gap-4 text-center'>
-            <div className="text-6xl font-semibold text-emerald-600 max-[576px]:text-5xl">
+            <div className="text-7xl font-semibold text-emerald-600 max-[576px]:text-5xl">
               SkillSphere
             </div>
             <div className='text-[#FFFFFF]'>
-              <p className='mb-6 text-gray-300'>A curated space for learning and growth. Explore new skills, build knowledge step by step, and shape your future with confidence through meaningful courses.</p>
+              <p className='mb-6 text-gray-300'>A curated space for learning and growth. Explore new skills, build knowledge step by step, <br></br> and shape your future with confidence through meaningful courses.</p>
               <p className='text-xl'>Social Links</p>
             </div>
             <div className='flex gap-4'>

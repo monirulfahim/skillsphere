@@ -65,6 +65,24 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-4">Learning Tips</h2>
         <p>Manage your time effectively and practice daily!</p>
       </section> */}
+        <section
+        className="relative h-195 flex items-center justify-center text-center text-white max-[576px]:h-100 max-[576px]:w-full"
+        style={{
+          backgroundImage: "url('/images/Learning.png')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black opacity-20"></div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-4xl mx-auto px-4">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-[#FFFFFF] animate-float">Learning Tips</h1>
+          <p className="text-xl md:text-3xl mb-12 opacity-90 text-[#FFFFFF] animate-float">Manage your time effectively <br></br> and practice daily!</p>
+        </div>
+      </section>
     </div>
   );
 }
