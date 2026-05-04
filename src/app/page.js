@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 import coursesData from '../data/courses.json';
 import Link from 'next/link';
@@ -47,7 +46,8 @@ export default function Home() {
                   alt={course.title}
                   fill
                   className="object-cover rounded"
-                />
+              import Image from "next/image";
+  />
               </div>
               <h3 className="font-bold text-2xl text-gray-700 mb-2">{course.title}</h3>
               <p className="text-gray-700 text-xl">By {course.instructor}</p>

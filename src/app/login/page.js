@@ -3,25 +3,43 @@ import React from "react";
 import { toast } from "react-hot-toast";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { authClient } from "@/lib/auth-client";
 
 export default function Login() {
     const router = useRouter();
 
     const handleLogin = async (e) => {
         e.preventDefault();
-        const form = e.target;
-        const email = form.email.value;
-        const password = form.password.value;
+        const email = e.target.email.value;
+        const password = e.target.password.value;
 
-        try {
-            
-            toast.success("Login Successful!");
-            router.push("/");
-        } catch (err) {
-            toast.error("Invalid credentials!");
-        }
+        await authClient.signIn.email(
+            {
+                email,
+                password,
+            },
+            {
+                onSuccess: () => {
+                    toast.success("Login Successful!");
+                    router.push("/");
+                },
+                onError: (ctx) => {
+                    toast.error(ctx.error.message);
+                },
+            }
+        );
     };
 
+    const handleGoogleLogin = async () => {
+        try {
+            await authClient.signIn.social({
+                provider: "google",
+                callbackURL: "/",
+            });
+        } catch (err) {
+            toast.error("Google login failed!");
+        }
+    };
     return (
         <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4">
             <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">

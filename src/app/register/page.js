@@ -3,24 +3,38 @@ import React from "react";
 import { toast } from "react-hot-toast";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { authClient } from "@/lib/auth-client";
 
 export default function Register() {
     const router = useRouter();
 
     const handleRegister = async (e) => {
         e.preventDefault();
-        const form = e.target;
-        const name = form.name.value;
-        const email = form.email.value;
-        const photo = form.photo.value;
-        const password = form.password.value;
+        const name = e.target.name.value;
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        const image = e.target.photo.value;
 
-        try {
-            toast.success("Registration Successful!");
-            router.push("/login");
-        } catch (err) {
-            toast.error(err.message || "Registration failed!");
-        }
+        await authClient.signUp.email(
+            {
+                email,
+                password,
+                name,
+                image,
+            },
+            {
+                onRequest: () => {
+                    
+                },
+                onSuccess: () => {
+                    toast.success("Registration Successful!");
+                    router.push("/login");
+                },
+                onError: (ctx) => {
+                    toast.error(ctx.error.message);
+                },
+            }
+        );
     };
 
     return (
@@ -51,5 +65,8 @@ export default function Register() {
                 </p>
             </div>
         </div>
+
+
+
     );
 }

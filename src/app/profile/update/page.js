@@ -10,7 +10,7 @@ export default function UpdateProfile() {
     const photo = form.photo.value;
 
     try {
-      // BetterAuth প্রোফাইল আপডেট লজিক এখানে কল হবে
+      
       toast.success("Profile Updated successfully!");
     } catch (err) {
       toast.error("Failed to update profile.");
