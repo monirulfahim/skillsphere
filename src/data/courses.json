@@ -20,16 +20,6 @@
     "image": "/images/ui-ux.png"
   },
   {
-    "id": 3,
-    "title": "Digital Marketing",
-    "instructor": "Alex",
-    "duration": "10 hours",
-    "rating": 4.6,
-    "level": "Intermediate",
-    "description": "Marketing skills",
-    "image": "/images/digital-marketing.jpg"
-  },
-  {
     "id": 4,
     "title": "React Mastery",
     "instructor": "David",
@@ -38,6 +28,16 @@
     "level": "Advanced",
     "description": "Deep React",
     "image": "/images/react-mastery.jpeg"
+  },
+  {
+    "id": 3,
+    "title": "Digital Marketing",
+    "instructor": "Alex",
+    "duration": "10 hours",
+    "rating": 4.6,
+    "level": "Intermediate",
+    "description": "Marketing skills",
+    "image": "/images/digital-marketing.jpg"
   },
   {
     "id": 5,

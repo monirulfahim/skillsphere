@@ -41,7 +41,7 @@ export default function Home() {
 
             <div key={course.id} className='bg-[#F9FAFC] text-[#FFFFFF] p-6 rounded-2xl shadow-[0_10px_50px_rgba(70,50,240,0.4)] relative max-[576px]:shadow-[0_10px_50px_rgba(70,50,240,0.3)]'>
               <div><button className='bg-[#FEF3C6] text-[#873b05] rounded-[100px] px-2 py-1 absolute -top-3 left-1/2 -translate-x-1/2'>Most Popular</button></div>
-              <div className="relative w-full h-49 mb-4">
+              <div className="relative w-full h-50 mb-4">
                 <Image
                   src={course.image}
                   alt={course.title}
@@ -61,10 +61,6 @@ export default function Home() {
       </section>
 
       {/* Learning Tips Section */}
-      {/* <section className="bg-gray-100 py-10 text-center">
-        <h2 className="text-2xl font-bold mb-4">Learning Tips</h2>
-        <p>Manage your time effectively and practice daily!</p>
-      </section> */}
         <section
         className="relative h-195 flex items-center justify-center text-center text-white max-[576px]:h-100 max-[576px]:w-full"
         style={{

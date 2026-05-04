@@ -79,9 +79,9 @@ export default function RootLayout({ children }) {
         <main className="flex-grow">{children}</main>
 
         {/* --- Footer --- */}
-        <footer className="bg-gray-800 text-white p-8 mt-10 max-[576px]:p-5">
+        <footer className="bg-gray-800 text-white p-12 mt-0 max-[576px]:pt-14 max-[576px]:pr-4 max-[576px]:pl-4">
           <div className='flex flex-col justify-center items-center gap-4 text-center'>
-            <div className="text-7xl font-semibold text-emerald-600 max-[576px]:text-5xl">
+            <div className="text-7xl font-semibold text-gray-300 max-[576px]:text-5xl">
               SkillSphere
             </div>
             <div className='text-[#FFFFFF]'>
