@@ -4,6 +4,7 @@ import "./globals.css";
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { Menu, X } from "lucide-react";
+import { Toaster } from 'react-hot-toast';
 
 const geistSans = Geist({
   subsets: ["latin"],
